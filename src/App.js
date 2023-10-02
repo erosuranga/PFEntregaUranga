@@ -1,39 +1,21 @@
-/*import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
-*/
 import React from "react";
 import ItemListContainer from "./components/ItemListContainer";
 import Navbar from "./components/NavBar";
 import "./App.css";
+import Button from "./components/button";
 
 function App() {
   return (
     <>
       <Navbar />
       <ItemListContainer greetings={"Bienvenidos a Nuestra Tienda"} />
+      <div>
+        <Button
+          color="red"
+          label="mi boton"
+          callback={() => console.log("click")}
+        />
+      </div>
     </>
   );
 }
