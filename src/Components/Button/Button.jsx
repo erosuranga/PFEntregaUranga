@@ -1,4 +1,4 @@
-import "../index.css";
+import "../Styles/index.css";
 import React from "react";
 
 const Button = ({ color, children, callback }) => {
