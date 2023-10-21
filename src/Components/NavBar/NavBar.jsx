@@ -1,34 +1,36 @@
 import React from "react";
+import "./assets/Nav.css";
 import CartWidget from "../CartWidget/CartWidget";
-import logo from "../images/logo192.png";
-import "../Styles/index.css";
-
+import { NavLink, Link } from "react-router-dom";
+import "./NavBar.css";
 const Navbar = () => {
   return (
     <nav className="NavBar">
-      <div className="NavBar-container">
-        <img src={logo} alt="logo" height={80} className="NavBar-logo" />
-        <span className="NavBar-title">STORE</span>
-        <div className="NavBar-menu-container">
-          <ul className="NavBar-menu">
-            <li className="NavBar-menu-item">
-              <span className="NavBar-menu-link">Verano</span>
-            </li>
-            <li className="NavBar-menu-item">
-              <span className="NavBar-menu-link">Invierno</span>
-            </li>
-            <li className="NavBar-menu-item">
-              <span className="NavBar-menu-link">Primavera</span>
-            </li>
-            <li className="NavBar-menu-item">
-              <span className="NavBar-menu-link">Otoño</span>
-            </li>
-          </ul>
-          <CartWidget />
-        </div>
+      <Link to="/">
+        <h3>Ecommerce</h3>
+      </Link>
+      <div className="Categories">
+        <NavLink
+          to={`/category/electronicos`}
+          className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
+        >
+          Electronicos
+        </NavLink>
+        <NavLink
+          to={`/category/ropa`}
+          className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
+        >
+          Ropa
+        </NavLink>{" "}
+        <NavLink
+          to={`/category/libros`}
+          className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
+        >
+          Libros
+        </NavLink>
       </div>
+      <CartWidget />
     </nav>
   );
 };
-
 export default Navbar;

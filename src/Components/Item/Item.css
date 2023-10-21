@@ -1,0 +1,47 @@
+/* Agrega estilos según sea necesario */
+
+.CardItem {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.Header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.ItemHeader {
+  margin: 0;
+}
+
+.Info {
+  padding: 10px;
+  text-align: center;
+}
+
+.ItemFooter {
+  padding: 10px;
+  text-align: center;
+}
+
+.Option {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.Option:hover {
+  background-color: #0056b3;
+}

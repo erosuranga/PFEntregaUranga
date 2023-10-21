@@ -1,0 +1,48 @@
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007bff;
+  padding: 10px;
+  color: white;
+}
+
+.NavBar h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.Option {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.Option:hover {
+  color: #0056b3;
+}
+
+.ActiveOption {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.Categories {
+  display: flex;
+  align-items: center;
+}
+
+.CartWidget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
