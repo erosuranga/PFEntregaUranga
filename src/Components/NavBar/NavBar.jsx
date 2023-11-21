@@ -11,7 +11,7 @@ const Navbar = () => {
       </Link>
       <div className="Categories">
         <NavLink
-          to={`/category/electronicos`}
+          to={`/category/Electronicos`}
           className={({ isActive }) => (isActive ? "ActiveOption" : "Option")}
         >
           Electronicos
