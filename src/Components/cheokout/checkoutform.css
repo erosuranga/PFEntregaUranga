@@ -1,0 +1,36 @@
+.Container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.Input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.Button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background-color: #45a049;
+}

@@ -25,7 +25,9 @@ const Cart = () => {
       <button onClick={() => clearCart()} className="Button">
         Limpiar carro
       </button>
-      <Link to="/checkout" className="Option"></Link>
+      <Link to="/checkout" className="Option">
+        Finalizar compra
+      </Link>
     </div>
   );
 };

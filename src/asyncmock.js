@@ -1,4 +1,4 @@
-const products = [
+/* const products = [
   {
     id: "1",
     name: "Producto 1",
@@ -65,3 +65,4 @@ export const getProductsByCategory = (productCategory) => {
     });
   });
 };
+ */

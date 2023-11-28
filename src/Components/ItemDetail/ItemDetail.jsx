@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/cartContext";
+import "./ItemDetail.css";
 
 const ItemDetail = ({ id, name, category, price, stock }) => {
   const [quantityAdded, setQuantityAdded] = useState(0);
@@ -21,11 +22,11 @@ const ItemDetail = ({ id, name, category, price, stock }) => {
   return (
     <article className="CardItem">
       <header>
-        <h2> {name}</h2>
+        <h2 className="Name"> {name}</h2>
       </header>
       <section>
-        <p>Categoria : {category}</p>
-        <p>Precio : ${price}</p>
+        <p className="Categoria">Categoria : {category}</p>
+        <p className="Precio">Precio : ${price}</p>
       </section>
       <footer>
         {quantityAdded > 0 ? (

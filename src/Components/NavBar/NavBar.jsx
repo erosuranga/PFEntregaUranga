@@ -1,6 +1,6 @@
 import React from "react";
 import "./assets/Nav.css";
-import CartWidget from "../CartWidget/CartWidget";
+
 import { NavLink, Link } from "react-router-dom";
 import "./NavBar.css";
 const Navbar = () => {
@@ -29,7 +29,6 @@ const Navbar = () => {
           Libros
         </NavLink>
       </div>
-      <CartWidget />
     </nav>
   );
 };

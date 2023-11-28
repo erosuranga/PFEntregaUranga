@@ -5,11 +5,15 @@
   border-radius: 8px;
   overflow: hidden;
   margin: 10px;
-  width: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: calc(33.33% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.CardItem:hover {
+  transform: scale(1.05);
 }
 
 .Header {
@@ -20,6 +24,8 @@
 
 .ItemHeader {
   margin: 0;
+  color: #333;
+  font-size: 1.2em;
 }
 
 .Info {
@@ -40,6 +46,8 @@
   cursor: pointer;
   border-radius: 4px;
   font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .Option:hover {

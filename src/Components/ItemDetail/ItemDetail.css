@@ -1,0 +1,30 @@
+.CardItem {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  max-width: 300px;
+}
+
+.Name {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.Categoria,
+.Precio {
+  margin: 8px 0;
+}
+
+.Option {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.Option:hover {
+  background-color: #45a049;
+}
