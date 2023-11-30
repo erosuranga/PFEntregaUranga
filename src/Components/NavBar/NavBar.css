@@ -33,16 +33,3 @@
   display: flex;
   align-items: center;
 }
-
-.CartWidget {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
-  padding: 8px 16px; /* Ajusta el padding según tus necesidades */
-  border-radius: 4px;
-  font-size: 14px; /* Ajusta el tamaño de fuente según tus necesidades */
-  cursor: pointer;
-  transition: background-color 0.3s;
-}

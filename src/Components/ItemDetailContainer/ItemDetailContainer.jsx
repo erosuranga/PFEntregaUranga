@@ -12,6 +12,7 @@ const ItemDetailContainer = () => {
   const [loading, setLoading] = useState(true);
 
   const { itemId } = useParams();
+
   useEffect(() => {
     setLoading(true);
 
@@ -20,6 +21,7 @@ const ItemDetailContainer = () => {
     getDoc(docRef)
       .then((response) => {
         const data = response.data();
+
         const productsAdapted = { id: response.id, ...data };
         setProduct(productsAdapted);
       })

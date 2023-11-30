@@ -3,6 +3,7 @@ import "./assets/Nav.css";
 
 import { NavLink, Link } from "react-router-dom";
 import "./NavBar.css";
+import CartWidget from "../CartWidget/CartWidget";
 const Navbar = () => {
   return (
     <nav className="NavBar">
@@ -28,6 +29,7 @@ const Navbar = () => {
         >
           Libros
         </NavLink>
+        <CartWidget />
       </div>
     </nav>
   );

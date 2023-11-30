@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { CartContext } from "../../context/cartContext";
+import { CartContext } from "../../context/CartContext";
 import {
   Timestamp,
   addDoc,
@@ -39,6 +39,7 @@ const Checkout = () => {
       const outOfStock = [];
 
       const ids = cart.map((prod) => prod.id);
+      console.log("asdadasf", ids);
 
       const productsRef = collection(db, "productos");
 
@@ -86,7 +87,7 @@ const Checkout = () => {
   }
 
   if (orderId) {
-    return <h1> El id su orden es: </h1>;
+    return <h1> El id su orden es:{orderId}</h1>;
   }
 
   return (

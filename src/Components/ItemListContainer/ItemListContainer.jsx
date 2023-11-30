@@ -21,8 +21,10 @@ const ItemListContainer = ({ greeting }) => {
       .then((response) => {
         const productsAdapted = response.docs.map((doc) => {
           const data = doc.data();
+          console.log("dbfgsdgsgsgnfgn", data);
           return { id: doc.id, ...data };
         });
+
         setProducts(productsAdapted);
       })
       .catch((error) => {
